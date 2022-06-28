@@ -1,6 +1,6 @@
 package model;
 
-public class Pocong extends Enemy{
+public class Pocong extends Lawan implements GauntletThanos,JubahIronman{
     public void jump(){
         name = "Pocong";
         System.out.println("Pocong Lompat-lompat");
@@ -10,10 +10,48 @@ public class Pocong extends Enemy{
     @Override
     public void attack(){
         //super(int hp);
-        super.attack();
+        //super.attack();
         System.out.println("Pocong terjatuh dan terluka hatinya");
-        hp-=1;
+        
+        super.hp-=1;
     }
+
+    @Override
+    public void cetakNamaMusuh() {
+        // TODO Auto-generated method stub
+        System.out.println("ini Pocong");
+    }
+
+    @Override
+    public void jarvis() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void tembakLaser() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void terbang() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void snap() {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void pindahUniverse() {
+        // TODO Auto-generated method stub
+        
+    }
+
 
         //user define class
     
